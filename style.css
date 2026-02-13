@@ -1,0 +1,29 @@
+:root {
+    --couleur-fond: #212121; /* Couleur de fond gris clair */
+    --couleur-texte: #e9e9e9; /* Couleur du texte blanc */
+    --couleur-accent: #e9e9e9; /* Couleur d'accent bleu foncé */
+}
+
+body {
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte);
+
+    font-family: Arial, sans-serif; /* Type de police */
+    text-align: center; /* Aligne tout le texte au centre */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 20px; /* Ajoute un peu d'espace autour du contenu */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;             /* Centre le contenu verticalement sur l'écran */
+}
+
+h1 {
+    color: var(--couleur-accent);
+    margin-top: 50px; /* Espace au-dessus du titre */
+}
+
+p {
+    color: var(--couleur-texte);
+    font-size: 18px; /* Taille du texte */
+}
