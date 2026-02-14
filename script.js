@@ -43,6 +43,7 @@ boutonTheme.addEventListener('click', function() {
         boutonTheme.textContent = 'Dark';
         localStorage.setItem('theme', 'dark');
     }
+
 });
 
 // 4. Charger le thème au chargement de la page

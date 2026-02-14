@@ -23,6 +23,17 @@ display: flex; /* Indispensable pour que le centrage fonctionne */
     box-sizing: border-box; /* Évite que le padding n'ajoute de la taille à la page */
 }
 
+/* État final : Mode Clair (appliqué via JavaScript) */
+body.light-mode {
+    --couleur-fond: #ececec;
+    --couleur-texte: #212121;
+    --couleur-accent: #000000;
+    --couleur-bouton: #ffffff;
+    
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte);
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--couleur-accent);
     margin-top: 50px; /* Espace au-dessus du titre */
@@ -43,19 +54,18 @@ button {
     transition: background-color 0.5s, color 0.5s;
 }
 
-button:hover {
-    background-color: var(--couleur-texte);
-    color: var(--couleur-bouton);
-}
-
-/* État final : Mode Clair (appliqué via JavaScript) */
-body.light-mode {
-    background-color: #ececec; /* Fond blanc */
-    color: #212121;
-}
-
 body.light-mode button {
-    background-color: #ececec; /* Bouton blanc */
-    color: #212121; /* Texte foncé pour être lisible */
+    background-color: var(--couleur-bouton);
+    color: var(--couleur-texte);
     border: 1px solid #212121;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+button:disabled:hover {
+    background-color: var(--couleur-bouton); /* Pas de changement au survol */
+    color: var(--couleur-texte);
 }
