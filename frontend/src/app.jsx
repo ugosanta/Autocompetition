@@ -1,18 +1,13 @@
-import { BrowserRouter as Router, Route, Switch, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Retrait de Switch
 import Home from "./pages/home";
 
 function App() {
-
     return (
         <Router>
-            <Nav/>
             <Routes>
                 <Route path="/" element={<Home />} />
-
             </Routes>
-            <Footer/>
         </Router>
-
     );
 };  
 
