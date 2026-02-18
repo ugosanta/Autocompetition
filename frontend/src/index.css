@@ -1,0 +1,9 @@
+:root {
+    --body-font: 'dm-sans', sans-serif;
+    --text-light-mode: #000000;
+    --text-dark-mode: #ffffff;
+
+    --bg-light-mode: #ffffff;
+    --bg-dark-mode: #3d3d3d;
+}
+
