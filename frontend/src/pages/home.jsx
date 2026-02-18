@@ -1,14 +1,16 @@
+  import React from "react";
   import { useEffect } from "react";
+  import "./home.css";
   
   function Home() {
       useEffect(() => {
-        document.title = "Home - AutoCompetition";
+        document.title = "Accueil - Autocompetition";
 }, []);
 
   return (
     <div>
       <h1>
-        Bienvenue sur AutoCompetition, votre plateforme de vente de véhicules de compétition automobile en ligne !
+        Bienvenue sur Autocompétition, votre plateforme de vente de véhicules de compétition automobile !
       </h1>
     </div>
     );}
