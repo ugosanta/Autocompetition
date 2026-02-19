@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 
-
-
 :root {
     --body-font: 'dm-sans', sans-serif;
     --text-light-mode: #000000;
